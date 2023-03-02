@@ -36,10 +36,10 @@ async def res_str(_, message: Message):
         pass
 
     if await is_streaming(message.chat.id):
-        return await message.reply_text("انت موقفني اكتب كمل عشان اشتغل تاني 🙃")
+        return await message.reply_text("انت موقفني اكتب كمل حته اشتغل  🙃")
     await stream_on(message.chat.id)
     await pytgcalls.resume_stream(message.chat.id)
     return await message.reply_text(
-        text=f"⎊ اشتغلت تاني 💫\n│ \n└ الرايق ال طلبها : {message.from_user.mention} 🥀",
+        text=f"⎊ اشتغلت بـيبي 💫\n│ \n└ الرايق ال طلبها : {message.from_user.mention} 🥀",
         reply_markup=close_key,
     )
