@@ -36,9 +36,9 @@
         "value": "",
         "required": true
       },
-      "LOG_GROUP_ID": {
+      "SUPPORT_CHAT": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "https://t.me/MUSICIQD",
         "required": true
       },
       "UPSTREAM_REPO": {
