@@ -12,41 +12,41 @@
     ],
     "env": {
       "API_ID": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "23559116",
+        "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
+        "value": "21911480",
         "required": true
       },
       "API_HASH": {
-        "description": "Get this value from https://my.telegram.org",
-        "value": "ac878ed19ca558e9a23e891098e328af",
+        "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
+        "value": "b8ababdddc7ab2a226c6eac5ffe07d2f",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "A Bot's token from Botfather",
-        "value": "5883267611:AAHQneHG1o5AOLk5RHqCDddniYs67uHD7MI",
+        "description": "ضـع تـوكـن بـوتـك هـنـا",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
-        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5179721996",
+        "description": "ضـع ايـديـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @SessionStringGeneratorZBot",
+        "value": "",
         "required": true
       },
       "SUDO_USERS": {
-      "description": "المساعد",
-      "value": "5179721996",
-      "required": true
-      },
-      "STRING_SESSION": {
-        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "description": "ضـع ايـدي الـحـسـاب الـمـسـاعـد",
         "value": "",
         "required": true
       },
       "SUPPORT_CHAT": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
+        "description": "ضـع رابـط جـروب الـدعـم",
         "value": "https://t.me/MUSICIQD",
-        "required": true
+        "required": false
       },
-      "UPSTREAM_REPO": {
+     "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
         "value": "https://github.com/D3NE/VCDenar",
         "required": true
@@ -68,10 +68,5 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "Eco"
-          }
-      }
+      "stack": "container"
   }
