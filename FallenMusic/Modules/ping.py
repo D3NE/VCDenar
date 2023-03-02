@@ -32,10 +32,10 @@ from FallenMusic import BOT_NAME, StartTime, app
 from FallenMusic.Helpers import get_readable_time
 
 
-@app.on_message(filters.command("بنج"))
+@app.on_message(filters.command("بنك"))
 async def ping_fallen(_, message: Message):
     hmm = await message.reply_photo(
-        photo=config.PING_IMG, caption=f"{BOT_NAME} جاريـﮯ..."
+        photo=config.PING_IMG, caption=f"{BOT_NAME} جاري..."
     )
     upt = int(time.time() - StartTime)
     cpu = psutil.cpu_percent(interval=0.5)
@@ -46,7 +46,7 @@ async def ping_fallen(_, message: Message):
     uptime = get_readable_time((upt))
 
     await hmm.edit_text(
-        f"""⎊ آلبنج : `{resp}ᴍs`
+        f"""⎊ آلبنك : `{resp}ᴍs`
 
 <b><u>{BOT_NAME} آلحآله :</u></b>
 
@@ -59,8 +59,8 @@ async def ping_fallen(_, message: Message):
                 [
                     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=config.SUPPORT_CHAT),
                     InlineKeyboardButton(
-                        "𝐒𝐇𝐀𝐑𝐊",
-                        url="https://t.me/L_H_V",
+                        "Denar",
+                        url="https://t.me/MUSICIQD",
                     ),
                 ],
             ]
