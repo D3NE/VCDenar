@@ -34,13 +34,13 @@ async def set_pfp(_, message: Message):
         try:
             await app2.set_profile_photo(photo=img)
             return await fuk.edit_text(
-                f"⎊ {ASS_MENTION} آتغيـرت يـعم خلآص 😜"
+                f"⎊ {ASS_MENTION} تم يـروحي تـغيرت"
             )
         except:
             return await fuk.edit_text("⎊ فشـلت في تغيـر 🙃")
     else:
         await message.reply_text(
-            "⎊ لآزم تعمـل ريـب علي آلصـوره عشـآن تتحط"
+            "⎊ دسوي ريب عالصورة حبيبي انت"
         )
 
 
@@ -65,15 +65,15 @@ async def set_bio(_, message: Message):
             newbio = msg.text
             await app2.update_profile(bio=newbio)
             return await message.reply_text(
-                f"⎊ {ASS_MENTION} البايو اتغيرت يقلب."
+                f"⎊ {ASS_MENTION} البايو تغير يحيلي"
             )
     elif len(message.command) != 1:
         newbio = message.text.split(None, 1)[1]
         await app2.update_profile(bio=newbio)
-        return await message.reply_text(f"⎊ {ASS_MENTION} آلبآيـو آتغيـرت يـقلب")
+        return await message.reply_text(f"⎊ {ASS_MENTION} البايو تغير يبعدي")
     else:
         return await message.reply_text(
-            "⎊ آعمـل ريـب علي آلبآيـو عشـآن تتحط"
+            "⎊ ممكن تسوي رد عالبايو مابيه حيل كلشوي اعيد"
         )
 
 
@@ -90,8 +90,8 @@ async def set_name(_, message: Message):
     elif len(message.command) != 1:
         name = message.text.split(None, 1)[1]
         await app2.update_profile(first_name=name, last_name="")
-        return await message.reply_text(f"⎊ {ASS_MENTION} ‌‌‌🇸‌🇻 غيـرتهہ‏‏ ولگ يـبرو")
+        return await message.reply_text(f"⎊ {ASS_MENTION} ‌‌‌🇸‌🇻 غيـرتهہ‏‏ بيبي")
     else:
         return await message.reply_text(
-            "⎊ آعمـل ريـب علي آلآسـم آلي آنت عآيز تحطـو"
+            "⎊ سوي رد عالاسم 😡"
         )
