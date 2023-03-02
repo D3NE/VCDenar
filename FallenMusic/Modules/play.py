@@ -77,14 +77,14 @@ async def play(_, message: Message):
             get = await app.get_chat_member(message.chat.id, ASS_ID)
         except ChatAdminRequired:
             return await fallen.edit_text(
-                f"⎊ آديڼي ڝلآحـيهہ آلآضآڣهہ علشآڼ أضًـيِّف آلمسآعد {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                f"⎊ انطيني صلاحية اضيف المساعد  {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
             )
         if get.status == ChatMemberStatus.BANNED:
             unban_butt = InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text=f"آلۼآء حـظڕ {ASS_NAME}",
+                            text=f"الغاء حـظر {ASS_NAME}",
                             callback_data=f"unban_assistant {message.chat.id}|{ASS_ID}",
                         ),
                     ]
@@ -106,7 +106,7 @@ async def play(_, message: Message):
                 invitelink = await app.export_chat_invite_link(message.chat.id)
             except ChatAdminRequired:
                 return await fallen.edit_text(
-                    f"⎊ آديڼي ڝلآحـيهہ آلآضآڣهہ علڜآڼ أّضًـيِّف آلمسآعد {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
+                    f"⎊ انطيني صلاحية اضيف المساعد {BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴏ {message.chat.title}."
                 )
             except Exception as ex:
                 return await fallen.edit_text(
@@ -115,13 +115,13 @@ async def play(_, message: Message):
         if invitelink.startswith("https://t.me/+"):
             invitelink = invitelink.replace("https://t.me/+", "https://t.me/joinchat/")
         anon = await fallen.edit_text(
-            f"آڼتظر جاري آلآڼضمام...\n\nبـعز۾ عليهہ  {ASS_NAME} ڣي {message.chat.title}."
+            f"آڼتظر جاري آلآڼضمام...\n\nصبر صبر  {ASS_NAME} ڣي {message.chat.title}."
         )
         try:
             await app2.join_chat(invitelink)
             await asyncio.sleep(2)
             await fallen.edit_text(
-                f"{ASS_NAME} وٍديڼي جيت,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
+                f"{ASS_NAME}  جيت يـبوي,\n\nsᴛᴀʀᴛɪɴɢ sᴛʀᴇᴀᴍ..."
             )
         except UserAlreadyParticipant:
             pass
