@@ -144,7 +144,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"⎊ معلش يحـب آلاغنيه طوٍيله آوٍي {DURATION_LIMIT} شۼل آۼڼيةّ تآڼيهہ {BOT_NAME}."
+                f"⎊ معلش يحـب آلاغنيه طوٍيله آوٍي {DURATION_LIMIT} شۼل آۼڼيةّ ثآڼيهہ {BOT_NAME}."
             )
 
         file_name = get_file_name(audio)
@@ -173,13 +173,13 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit_text(
-                f"⎊ معلش يحـب الاغنيه طوٍيله آوٍي {DURATION_LIMIT} ڜۼل آۼڼيةّ تآڼيهہ {BOT_NAME}.."
+                f"⎊ معلش يحـب الاغنيه طوٍيله آوٍي {DURATION_LIMIT} ڜۼل آۼڼيةّ ثآڼيهہ {BOT_NAME}.."
             )
         file_path = audio_dl(url)
     else:
         if len(message.command) < 2:
-            return await fallen.edit_text("⎊ قولى بس عايز تشغل اي 😋")
-        await fallen.edit_text("⚡")
+            return await fallen.edit_text("⎊ تريد تشغل شنو حبيبي")
+        await fallen.edit_text("🗽")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -199,7 +199,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             return await fallen.edit(
-                f"⎊ معلش يحـب آلاغنيه طوٍيله آوٍي {DURATION_LIMIT} ڜۼل آۼڼيةّ تآڼيهہ {BOT_NAME}.."
+                f"⎊ معلش يحـب آلاغنيه طوٍيله  {DURATION_LIMIT} ڜۼل آۼڼيةّ ثآڼيهہ {BOT_NAME}.."
             )
         file_path = audio_dl(url)
 
@@ -235,11 +235,11 @@ async def play(_, message: Message):
 
         except NoActiveGroupCall:
             return await fallen.edit_text(
-                "**⎊ بـتشتغلڼي مڣيڜ مكالمة مفتوحه**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
+                "**⎊ دفتح اتصال يالفطير**\n\nᴩʟᴇᴀsᴇ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜ sᴛᴀʀᴛᴇᴅ ᴛʜᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛ."
             )
         except TelegramServerError:
             return await fallen.edit_text(
-                "⎊ حـدثت مڜڴلهہ جرب آقڣل آلڴوٍل وٍآڣتح تآڼي"
+                "⎊ حـدثت مڜڴلهہ جرب تحلها 😂"
             )
         except UnMuteNeeded:
             return await fallen.edit_text(
