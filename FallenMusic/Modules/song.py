@@ -38,7 +38,7 @@ async def song(_, message: Message):
         await message.delete()
     except:
         pass
-    m = await message.reply_text("⚡")
+    m = await message.reply_text("❤️‍🩹")
 
     query = "".join(" " + str(i) for i in message.command[1:])
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
@@ -58,7 +58,7 @@ async def song(_, message: Message):
             f"ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴛ-ᴅʟ.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
         )
 
-    await m.edit_text("⎊ جاري التحميل انتظر,\n\n بواسطه ‌𝐒𝐇𝐀𝐑𝐊..")
+    await m.edit_text("⎊ جاري التحميل انتظر,\n\n بواسطه ‌Denar..")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
