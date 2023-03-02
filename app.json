@@ -12,39 +12,44 @@
     ],
     "env": {
       "API_ID": {
-        "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
-        "value": "21911480",
+        "description": "Get this value from https://my.telegram.org",
+        "value": "23559116",
         "required": true
       },
       "API_HASH": {
-        "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
-        "value": "b8ababdddc7ab2a226c6eac5ffe07d2f",
+        "description": "Get this value from https://my.telegram.org",
+        "value": "ac878ed19ca558e9a23e891098e328af",
         "required": true
       },
       "BOT_TOKEN": {
-        "description": "ضـع تـوكـن بـوتـك هـنـا",
-        "value": "",
+        "description": "A Bot's token from Botfather",
+        "value": "5883267611:AAHQneHG1o5AOLk5RHqCDddniYs67uHD7MI",
         "required": true
       },
       "OWNER_ID": {
-        "description": "ضـع ايـديـك هـنـا",
+        "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
+        "value": "5179721996",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
       },
-      "SESSION": {
-        "description": "ضـع جلسة البايروجرام احصل عليها من هنا @SessionStringGeneratorZBot",
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
         "value": "",
         "required": true
       },
-      "SUDO_USERS": {
-        "description": "ضـع ايـدي الـحـسـاب الـمـسـاعـد",
-        "value": "",
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/D3NE/VCDenar",
         "required": true
       },
-      "SUPPORT_CHAT": {
-        "description": "ضـع رابـط جـروب الـدعـم",
-        "value": "https://t.me/QW_PN",
-        "required": false
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "main",
+        "required": true
       }
     },
     "buildpacks": [
@@ -58,5 +63,10 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
-      "stack": "container"
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "Eco"
+          }
+      }
   }
