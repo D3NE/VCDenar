@@ -49,14 +49,14 @@ pm_buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
-    [InlineKeyboardButton(text="𓂄𓆩 اٰلـٰ̲ـہاٰوٰاٰمـٰ̲ـہرٰ 𓆪‌‌‏𓂁", callback_data="fallen_help")],
+    [InlineKeyboardButton(text="𔓘 الاوامـࢪ 𔓘", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text="𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="SOURCE DENAR", url=config.SUPPORT_CHANNEL),
         InlineKeyboardButton(text="ѕụᴘᴘᴏʀᴛ ɢʀᴏụᴘ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text="𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊", url="https://t.me/L_H_V"
+            text="SOURCE DENAR", url="https://t.me/MUSICIQD"
         ),
         InlineKeyboardButton(text="ʙᴏᴛ ᴏᴡɴᴇʀ", user_id=config.OWNER_ID),
     ],
@@ -71,12 +71,12 @@ gp_buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊", url=config.SUPPORT_CHANNEL),
+        InlineKeyboardButton(text="SOURCE DENAR", url=config.SUPPORT_CHANNEL),
         InlineKeyboardButton(text="ѕụᴘᴘᴏʀᴛ ɢʀᴏụᴘ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text="الاوامر", url="https://t.me/L_H_V/1288"
+            text="الاوامر", url="https://t.me/MUSICIQD"
         ),
         InlineKeyboardButton(text="ʙᴏᴛ ᴏᴡɴᴇʀ", user_id=config.OWNER_ID),
     ],
@@ -86,7 +86,7 @@ gp_buttons = [
 helpmenu = [
     [
         InlineKeyboardButton(
-            text="𓂄𓆩 ٱوٱمۘر ٱلتشغيۧل 𓆪‌‌‏𓂁",
+            text="𔓘 اوامـࢪ التشغيل 𔓘",
             callback_data="fallen_cb help",
         )
     ],
@@ -95,8 +95,8 @@ helpmenu = [
         InlineKeyboardButton(text="م̀آ̀لك آ̀لبوت", callback_data="fallen_cb owner"),
     ],
     [
-        InlineKeyboardButton(text="B𝗔𝗖𝗞", callback_data="fallen_home"),
-        InlineKeyboardButton(text="C𝗟𝗘𝗔𝗥", callback_data="close"),
+        InlineKeyboardButton(text="Back", callback_data="fallen_home"),
+        InlineKeyboardButton(text="Close", callback_data="close"),
     ],
 ]
 
@@ -104,7 +104,7 @@ helpmenu = [
 help_back = [
     [InlineKeyboardButton(text="ѕụᴘᴘᴏʀᴛ ɢʀᴏụᴘ", url=config.SUPPORT_CHAT)],
     [
-        InlineKeyboardButton(text="B𝗔𝗖𝗞", callback_data="fallen_help"),
-        InlineKeyboardButton(text="C𝗟𝗘𝗔𝗥", callback_data="close"),
+        InlineKeyboardButton(text="Back", callback_data="fallen_help"),
+        InlineKeyboardButton(text="Close", callback_data="close"),
     ],
 ]
