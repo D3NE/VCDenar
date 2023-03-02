@@ -45,7 +45,7 @@ buttons = InlineKeyboardMarkup(
 pm_buttons = [
     [
         InlineKeyboardButton(
-            text="ضيف̀ آ̀لبوت لم̀جم̀وع̀́تك ✅",
+            text="𔓘 ضـيفني گـروبك 𔓘",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
@@ -66,7 +66,7 @@ pm_buttons = [
 gp_buttons = [
     [
         InlineKeyboardButton(
-            text="ضيف̀ آ̀لبوت لم̀جم̀وع̀́تك ✅",
+            text="𔓘 ضـيفني گـروبك 𔓘",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         )
     ],
@@ -76,7 +76,7 @@ gp_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="الاوامر", url="https://t.me/MUSICIQD"
+            text="𔓘 الاوامـࢪ 𔓘", url="https://t.me/MUSICIQD"
         ),
         InlineKeyboardButton(text="ʙᴏᴛ ᴏᴡɴᴇʀ", user_id=config.OWNER_ID),
     ],
@@ -91,8 +91,8 @@ helpmenu = [
         )
     ],
     [
-        InlineKeyboardButton(text="آ̀وآ̀م̀ر̀ آ̀لم̀ط̀́ور̀", callback_data="fallen_cb sudo"),
-        InlineKeyboardButton(text="م̀آ̀لك آ̀لبوت", callback_data="fallen_cb owner"),
+        InlineKeyboardButton(text="𔓘 اوامـࢪ المطوࢪ 𔓘", callback_data="fallen_cb sudo"),
+        InlineKeyboardButton(text="𔓘 Owner 𔓘", callback_data="fallen_cb owner"),
     ],
     [
         InlineKeyboardButton(text="Back", callback_data="fallen_home"),
