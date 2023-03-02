@@ -31,6 +31,11 @@
         "value": "5179721996",
         "required": true
       },
+      "SUDO_USERS": {
+      "description": "المساعد",
+      "value": "5179721996",
+      "required": true
+      },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
